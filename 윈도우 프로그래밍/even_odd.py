@@ -38,11 +38,13 @@ Label(io_frame, text="결과").grid(row=1, column=0)
 text = Text(io_frame, width=15, height=2)
 text.grid(row=1, column=1)
 
+
 # 버튼 프레임
 btn_frame = Frame(root)
-btn_frame.pack(pady=10)
+btn_frame.pack(pady=5)
 
 # pack() - 한 줄 차지, side=LEFT(왼쪽에 배치, 오른쪽 버튼도 왼쪽 배치 속성)
+# TOP, RIGHT, BOTTOM, LEFT
 Button(btn_frame, text="판정", command=click).pack(side=LEFT, padx=5)
 Button(btn_frame, text="초기화", command=reset).pack(side=LEFT, padx=5)
 
