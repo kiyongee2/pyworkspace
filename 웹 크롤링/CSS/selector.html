@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS 학습하기</title>
+    <!-- 내부 style 태그는 CSS 디자인을 한다. 
+         반드시 head 태그에 위치해야 함
+    -->
+    <style>
+      /*
+         선택자 3가지
+         1. 태그 선택자 - html 태그로 선택
+         2. id 선택자 - #을 붙여서 스타일 한다.
+         3. class 선택자 - 점(.)을 붙여 스타일 함
+      */
+      body{
+        font-size: 18px;
+        background-color: lightgreen;
+      }
+      #container{
+        width: 500px;
+        border: 1px solid blue; /* 테두리선 */
+        padding: 10px;  /* 안쪽 여백 */
+      }
+      h1{ /* h1 - 태그 선택자  */
+        color: red;
+      }
+      .orange_text{ /* class 선택자는 점(.)을 붙인다.  */
+        color: orange;
+        font-weight: bold; /* 굵게 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div 태그는 특정 부분을 분할할때 사용 - 레이아웃, 스타일을 변경 -->
+    <div id="container">
+      <h1>레드향</h1>
+      <!-- span 태그는 한 줄에서 특정 부분 선택 -->
+      <p>껍질에 붉은 빛이 돌아 <span class="orange_text">레드향</span>이라 불린다.<br>
+        <span class="orange_text">레드향</span>은 한라봉과 귤을 교배한 것으로 일반 귤보다
+        2~3배 크고, 과육일 붉고 통통하다.<br>
+        비타민 C와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 알려져 있다.
+      </p>
+    </div>
+  </body>
+</html>
+
