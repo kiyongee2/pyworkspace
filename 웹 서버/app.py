@@ -12,4 +12,8 @@ def index():
 def login():
   return "<h2>로그인 페이지입니다.</h2>"
 
+@app.route("/board")
+def board():
+  return "<h2><i>게시판 목록입니다.</i></h2>"
+
 app.run()

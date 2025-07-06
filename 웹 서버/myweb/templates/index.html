@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인 페이지입니다...</title>
+  <!-- css 파일 연결 -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+  <div id="container">
+    <h1>웹 기초 기술</h1>
+    <hr>
+    <p>HTML - 웹 페이지의 구조를 담당</p>
+    <p>CSS - 웹 페이지의 디자인을 담당</p>
+    <p>Javascript - 웹 페이지의 동적 처리를 담당</p>
+
+    <!-- 이미지 넣기 -->
+    <img src = "{{ url_for('static', filename='cake.jpg')}}" alt="케이크"
+              width="640" height="420"><br><br>
+
+    <!-- 하이퍼 링크 -->
+     <a href="https://pixabay.com/ko/" target="_blank">픽사베이로 이동</a>
+  </div>
+</body>
+</html>

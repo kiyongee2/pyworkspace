@@ -1,0 +1,9 @@
+/* style.css */
+
+/* 페이지 가운데 정렬 */
+#container{
+  width: 80%; /* 전체 100%중 80% 차지 */
+  margin: 30px auto; /* 30px-상,하 여백 auto - 좌우여백을 자동맞춤 */
+}
+
+#container h1{color: blue;}
